@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Probabilidad</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        checkbox {
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+    <script>
+        function calcularProbabilidad() {
+            var edad = parseFloat(document.getElementById("edad").value);
+            var peso = parseFloat(document.getElementById("peso").value);
+            var talla = parseFloat(document.getElementById("talla").value);
+            var perimetroAbdominal = parseFloat(document.getElementById("perimetro").value);
+            var antecedentesHipertension = document.getElementById("antecedentesHipertension").checked;
+            var antecedentesDiabetes = document.getElementById("antecedentesDiabetes").checked;
+
+            // Fórmulas de ejemplo (no médicamente respaldadas)
+            var probabilidadDiabetes = 0.1 * edad + 0.05 * peso + 0.03 * talla + 0.02 * perimetroAbdominal + (antecedentesDiabetes ? 10 : 0);
+            var probabilidadHipertension = 0.08 * edad + 0.06 * peso + 0.04 * talla + 0.03 * perimetroAbdominal + (antecedentesHipertension ? 10 : 0);
+
+            // Mostrar las probabilidades
+            document.getElementById("resultadoDiabetes").innerHTML = "Probabilidad de diabetes: " + probabilidadDiabetes.toFixed(2) + "%";
+            document.getElementById("resultadoHipertension").innerHTML = "Probabilidad de hipertensión: " + probabilidadHipertension.toFixed(2) + "%";
+        }
+    </script>
+</head>
+<body>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSex0pZAX6MQkn2KLdbpETwhoFBqeCyVaJAlvSZoeZWnXzIhQw/viewform?usp=sf_link" target="_blank">Evaluación del prototipo de apoyo a los riesgos en salud</a>
+    <h1>Calculadora de Probabilidad</h1>
+    
+    <form>
+        <label for="edad">Edad (años): </label>
+        <input type="number" id="edad" required>
+
+        <label for="peso">Peso (kg): </label>
+        <input type="number" id="peso" required>
+
+        <label for="talla">Talla (cm): </label>
+        <input type="number" id="talla" required>
+
+        <label for="perimetro">Perímetro Abdominal (cm): </label>
+        <input type="number" id="perimetro" required>
+
+        <label for="antecedentesDiabetes">Antecedentes familiares de diabetes:</label>
+        <input type="checkbox" id="antecedentesDiabetes">
+
+        <label for="antecedentesHipertension">Antecedentes familiares de hipertensión:</label>
+        <input type="checkbox" id="antecedentesHipertension">
+
+        <button type="button" onclick="calcularProbabilidad()">Calcular Probabilidad</button>
+    </form>
+
+<center>
+<p style="font-weight: bold;" id="resultadoDiabetes"></p>
+<p style="font-weight: bold;" id="resultadoHipertension"></p>
+</center>
+</body>
+</html>
