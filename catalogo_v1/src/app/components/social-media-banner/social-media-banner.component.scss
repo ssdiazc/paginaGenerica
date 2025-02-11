@@ -1,0 +1,20 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "../../../styles-modules/colors.scss";
+
+.sm-container {
+    background: rgba(0, 0, 0, 0.3);
+
+    .follow-label {
+        margin: 20px;
+    }
+    .sm-icons {
+        text-align: right;
+        margin: 40px;
+        .sm-icon-style { 
+            cursor: pointer;
+            color: $primary-bg-light;
+            font-size: 40px;
+            margin: 10px;
+        }
+    }
+}

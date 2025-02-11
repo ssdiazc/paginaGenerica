@@ -1,0 +1,16 @@
+<!-- <a class="nav-link disabled" href="#">Circuitos</a> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand text-navbar-align">{{headerConstants?.brand?.title || 'Menú'}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse text-navbar-align" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li *ngFor="let section of headerConstants?.sections">
+            <a class="nav-link simple-zoom" *ngIf="section?.hasRef" [href]="section.ref">a{{section.title}} <span class="sr-only"></span></a>
+            <a class="nav-link disabled" *ngIf="!section?.hasRef" [href]="section.ref">{{section.title}} <span class="sr-only"></span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>

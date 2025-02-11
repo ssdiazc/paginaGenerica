@@ -1,0 +1,30 @@
+<footer>
+    <div class="">
+        <div class="row row-section-general-styles">
+            <!-- <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3" *ngFor="let section of footerConstants?.MainSections"> -->
+            <div class="col-sm" *ngFor="let section of footerConstants?.mainSections">
+                <h5>{{section.title}}</h5>
+                <div *ngFor="let subsection of section.subsections">
+                    <div  class="simple-zoom" *ngIf="subsection?.hasRef">
+                        <a (click)="openRef(subsection.ref)">{{subsection.title}}</a>
+                    </div>
+                    <div *ngIf="!subsection?.hasRef">
+                        <a>{{subsection.title}}</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="">
+            <app-social-media-banner [socialMediaInformation]="footerConstants?.socialMediaInformation" (goto)="openRef($event)"></app-social-media-banner>
+        </div>
+        <div class="row row-section-general-styles">
+            <p>
+                {{footerConstants.disclaimerText}}
+            </p>
+            <p>
+                {{footerConstants.copyRightText}}
+            </p>
+        </div>
+    </div>
+</footer>
