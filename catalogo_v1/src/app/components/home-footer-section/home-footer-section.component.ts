@@ -10,7 +10,7 @@ let FOOTER_CONSTANTS: any;
 })
 export class HomeFooterSectionComponent implements OnInit {
   constructor(constantsService: ConstantsService) {
-    FOOTER_CONSTANTS = constantsService.selectorConstants('footer')?.data;
+    FOOTER_CONSTANTS = constantsService.selectorConstants('footer');
   }
 
   ngOnInit(): void {}

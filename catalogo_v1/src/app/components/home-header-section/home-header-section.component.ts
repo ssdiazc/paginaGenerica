@@ -10,7 +10,7 @@ let HEADER_CONSTANTS: any;
 })
 export class HomeHeaderSectionComponent implements OnInit {
   constructor(constantsService: ConstantsService) {
-    HEADER_CONSTANTS = constantsService.selectorConstants('header')?.data;
+    HEADER_CONSTANTS = constantsService.selectorConstants('header');
   }
 
   ngOnInit(): void {}
