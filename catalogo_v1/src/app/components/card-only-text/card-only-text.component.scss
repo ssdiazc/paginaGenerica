@@ -1,0 +1,26 @@
+@import '../../../styles-modules/effects.scss';
+$card-border-radius: 20px;
+$inside-text-border-radius: 10px;
+$card-width: 250px;
+
+.card-container{
+    margin: 30px;
+    width:$card-width;
+    border-radius: $card-border-radius;
+    .card-bg-image{
+        width: 100%;
+        border-radius: $card-border-radius;
+    }
+    .card-content{
+        text-align: center;  display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(243, 237, 237);
+        font-weight: bolder;
+    
+        .card-text-container{
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: $inside-text-border-radius;
+        }
+    }
+}
