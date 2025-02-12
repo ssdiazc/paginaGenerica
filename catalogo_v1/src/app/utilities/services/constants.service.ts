@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import LocationsConstants from '../constants/data-constants';
 import FooterConstants from '../constants/footer-constants';
 import HeaderConstants from '../constants/header-constants';
 import { AllConstantsStructureInterfaz } from '../interfaces/general';
@@ -11,6 +12,10 @@ let allConstants: AllConstantsStructureInterfaz[] = [
   {
     name: 'header',
     data: HeaderConstants,
+  },
+  {
+    name: 'locations',
+    data: LocationsConstants,
   },
 ];
 
@@ -27,6 +32,6 @@ export class ConstantsService {
     return findData;
   }
   selectorConstants(constantsType: string) {
-    return allConstants?.find((type) => type.name === constantsType);
+    return allConstants?.find((type) => type.name === constantsType)?.data;
   }
 }

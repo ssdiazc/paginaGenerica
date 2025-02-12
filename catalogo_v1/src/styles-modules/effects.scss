@@ -3,6 +3,15 @@
     cursor: pointer;
 }
 
+.simple-zoom-x1 {
+    transition: transform .4s;
+    cursor: pointer;
+}
+
 .simple-zoom:hover {
     transform: scale(1.02);
+}
+
+.simple-zoom-x1:hover {
+    transform: scale(1.1);
 }

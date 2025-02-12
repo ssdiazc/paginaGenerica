@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse text-navbar-align" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li *ngFor="let section of headerConstants?.sections">
-            <a class="nav-link simple-zoom" *ngIf="section?.hasRef" [href]="section.ref">a{{section.title}} <span class="sr-only"></span></a>
+            <a class="nav-link simple-zoom" *ngIf="section?.hasRef" [href]="section.ref">{{section.title}} <span class="sr-only"></span></a>
             <a class="nav-link disabled" *ngIf="!section?.hasRef" [href]="section.ref">{{section.title}} <span class="sr-only"></span></a>
         </li>
       </ul>

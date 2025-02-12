@@ -1,0 +1,11 @@
+  <div class="card img-fluid card-container simple-zoom-x1" *ngIf="!!imageBackgroundLocation" (click)="goto()">
+    <img class="card-img-top card-bg-image" [src]="imageBackgroundLocation" alt="Card image">
+    <div class="card-img-overlay card-content">
+      <div class="col align-self-start card-text-container">
+        <h4 class="card-title" *ngIf="!!title">{{title}}</h4>
+      </div>
+      <div class="col align-self-end card-text-container" *ngIf="!!subtitle">
+        <h5>{{subtitle}}</h5>
+      </div>
+    </div>
+  </div>

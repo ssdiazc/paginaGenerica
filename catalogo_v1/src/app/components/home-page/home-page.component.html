@@ -1,1 +1,18 @@
-hola hola
+<div class="row">
+    <app-banner-show-info-template 
+    [dataToShow]="locationsConstants?.destinationInfo?.data" 
+    [horizontal]="locationsConstants?.bannerDestinationHomePageInfo?.horizontal"
+    [buttonSection] = 'locationsConstants?.bannerDestinationHomePageInfo?.buttonSection'
+    [title] = 'locationsConstants?.bannerDestinationHomePageInfo?.title'
+></app-banner-show-info-template>
+</div>
+
+<div class="row">
+    <app-banner-show-info-template 
+    [dataToShow]="locationsConstants?.bannerCircuitsHomePageInfo?.data" 
+    [horizontal]="locationsConstants?.bannerCircuitsHomePageInfo?.horizontal"
+    [title] = 'locationsConstants?.bannerCircuitsHomePageInfo?.title'
+    [cardType]="2"
+></app-banner-show-info-template>
+</div>
+

@@ -1,5 +1,14 @@
 @import "../../../styles-modules/effects.scss";
+@import "../../../styles-modules/colors.scss";
 
-.row-section-general-styles {
-    margin: 20px;
+.footer-main-container {
+    background-color: $primary-color;
+
+    .row-section-general-styles {
+        margin: 20px;
+
+        .col-cont-styles {
+            margin-top: 20px;
+        }
+    }
 }

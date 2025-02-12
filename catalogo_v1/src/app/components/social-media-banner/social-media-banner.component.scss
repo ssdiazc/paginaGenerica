@@ -2,7 +2,7 @@
 @import "../../../styles-modules/colors.scss";
 
 .sm-container {
-    background: rgba(0, 0, 0, 0.3);
+    background: $sm-primary-bg-opacity;
 
     .follow-label {
         margin: 20px;
