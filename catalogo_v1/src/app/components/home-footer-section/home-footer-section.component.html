@@ -1,8 +1,8 @@
 <footer>
-    <div class="">
+    <div class="footer-main-container">
         <div class="row row-section-general-styles">
             <!-- <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3" *ngFor="let section of footerConstants?.MainSections"> -->
-            <div class="col-sm" *ngFor="let section of footerConstants?.mainSections">
+            <div class=" col-cont-styles col-sm" *ngFor="let section of footerConstants?.mainSections">
                 <h5>{{section.title}}</h5>
                 <div *ngFor="let subsection of section.subsections">
                     <div  class="simple-zoom" *ngIf="subsection?.hasRef">

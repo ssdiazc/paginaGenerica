@@ -1,0 +1,10 @@
+<div class="card img-fluid card-container simple-zoom-x1">
+    <img class="card-img-top card-bg-image" [src]="imageLocation" alt="Card image">
+    <div class="card-body">
+        <h5 class="card-title" *ngIf="cardTitle">{{cardTitle}}</h5>
+        <p *ngFor="let element of text">
+            <a *ngIf="element?.prefix">{{element?.prefix}}:</a> {{element?.content}}
+        </p>
+        <a href="" class="btn btn-outline-success btn-sm" *ngIf="button">{{button?.label}}</a>
+    </div>
+  </div>

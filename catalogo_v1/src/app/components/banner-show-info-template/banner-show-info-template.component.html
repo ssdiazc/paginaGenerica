@@ -1,22 +1,38 @@
 <div class="banner-container">
-    <div class="row banner-title">
-        <h1>Destinos</h1>
+    <div class="row banner-title" *ngIf="!!title">
+        <h1>{{title}}</h1>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="!!dataToShow && cardType === 1">
         <div>
-            <div class="col-sm banner-content-hor">
-                <app-card-only-text></app-card-only-text>
-                <app-card-only-text></app-card-only-text>
-                <app-card-only-text></app-card-only-text>
-                <app-card-only-text></app-card-only-text>
-                <app-card-only-text></app-card-only-text>
-                <app-card-only-text></app-card-only-text>
+            <div class="col-sm" [ngClass] = "{'banner-content-hor' : horizontal, 'banner-content-ver' : !horizontal}">
+                <div *ngFor="let element of dataToShow">
+                    <app-card-only-text 
+                        [imageBackgroundLocation]="element?.source"
+                        [title]="element?.title"
+                        [subtitle]="element?.subtitle"
+                    ></app-card-only-text>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="!!dataToShow && cardType === 2">
+        <div>
+            <div class="col-sm" [ngClass] = "{'banner-content-hor' : horizontal, 'banner-content-ver' : !horizontal}">
+                <div *ngFor="let element of dataToShow">
+                <!-- <div> -->
+                    <app-card-text-type-ll
+                        [imageLocation]="element?.source"
+                        [cardTitle]="element?.title"
+                        [text]="element.text"
+                        [button]="element?.button"
+                    ></app-card-text-type-ll>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngIf="buttonSection?.showButton">
         <div style="text-align: right;">
-            <button class="btn btn-success" style="width: 100px; margin: 20px 40px 20px 20px; border-radius: 10px;">Ver Más</button>
+            <button class="btn btn-success" style="min-width: 100px; margin: 20px 40px 20px 20px; border-radius: 10px;">{{buttonSection?.label}}</button>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 @import '../../../styles-modules/effects.scss';
 @import '../../../styles-modules/colors.scss';
-$card-border-radius: 20px;
+$card-border-radius: 10px;
 $inside-text-border-radius: 10px;
 $card-width: 250px;
 
@@ -13,15 +13,13 @@ $card-width: 250px;
         height: 170px;
         border-radius: $card-border-radius;
     }
-    .card-content{
-        text-align: center;  display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: bolder;
-    
-        .card-text-container{
-            background: rgba(0, 0, 0, 0.5);
-            border-radius: $inside-text-border-radius;
+
+    .card-body {
+        text-align: justify;
+        color: $dark-font-color;
+        .card-title {
+            color: $card-title-font-color;
         }
     }
+
 }
