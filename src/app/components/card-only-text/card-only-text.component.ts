@@ -18,7 +18,7 @@ export class CardOnlyTextComponent implements OnInit {
   goto(url?: string, navOption?: string, openOption?: string) {
     if (!!navOption && navOption === 'router') {
       this.router.navigate(['/', url]);
-    } else {
+    } else if (!!navOption && navOption === 'simple') {
       window.open(url, !!openOption ? openOption : '');
     }
   }
