@@ -69,11 +69,11 @@ const FooterConstants = {
       icon: 'bi bi-facebook sm-icon-style',
       url: 'https://www.facebook.com/share/186spyPdNM/?mibextid=wwXIfr',
     },
-    // {
-    //   name: 'Instagram',
-    //   icon: 'bi bi-instagram sm-icon-style',
-    //   url: 'https://www.instagram.com/hisenseco/?hl=es',
-    // },
+    {
+      name: 'Instagram',
+      icon: 'bi bi-instagram sm-icon-style',
+      url: 'https://www.instagram.com/aurum_travel1?igsh=M3gwYmd3cXRweGd3&utm_source=qr',
+    },
     {
       name: 'WhatsApp',
       icon: 'bi bi-whatsapp sm-icon-style',
