@@ -1,0 +1,9 @@
+@import '../../../styles-modules/colors.scss';
+
+.us-section{
+    color: $dark-font-color;
+    margin: 20px;
+    .us-title {
+        color: $card-title-font-color;
+    }
+}

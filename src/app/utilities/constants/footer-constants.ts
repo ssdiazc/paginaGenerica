@@ -6,17 +6,17 @@ const FooterConstants = {
         {
           title: 'Cláusula de Responsabilidad',
           hasRef: true,
-          ref: 'https://www.cielosabiertos.com.co/es/clau-resp',
+          ref: '',
         },
         {
           title: 'Condiciones Generales',
           hasRef: true,
-          ref: 'https://www.cielosabiertos.com.co/es/clau-resp',
+          ref: '',
         },
         {
           title: 'Protección de datos',
           hasRef: true,
-          ref: 'https://www.cielosabiertos.com.co/es/clau-resp',
+          ref: '',
         },
       ],
     },
@@ -26,17 +26,17 @@ const FooterConstants = {
         {
           title: 'Hoteles',
           hasRef: true,
-          ref: 'https://www.cielosabiertos.com.co/es/clau-resp',
+          ref: '',
         },
         {
           title: 'Circuitos',
           hasRef: true,
-          ref: 'https://www.cielosabiertos.com.co/es/clau-resp',
+          ref: '',
         },
         {
           title: 'Actividades',
           hasRef: true,
-          ref: 'https://www.cielosabiertos.com.co/es/clau-resp',
+          ref: '',
         },
       ],
     },
@@ -44,18 +44,18 @@ const FooterConstants = {
       title: 'Contáctenos',
       subsections: [
         {
-          title: 'Carrera 25 #33-33, Bogotá',
+          title: 'Carrera 66a #4g 10 zona industrial pradera, Bogotá',
           hasRef: false,
         },
         {
-          title: 'probando@gmail.com',
+          title: 'aurumtravel1@gmail.com',
           hasRef: true,
-          ref: 'mailto:someone@example.com',
+          ref: 'mailto:aurumtravel1@gmail.com',
         },
         {
-          title: 'WhatsApp: 3124128097',
+          title: 'WhatsApp: 3242870497',
           hasRef: true,
-          ref: 'https://api.whatsapp.com/send?phone=3124128097',
+          ref: 'https://api.whatsapp.com/send?phone=3242870497',
         },
       ],
     },
@@ -67,13 +67,13 @@ const FooterConstants = {
     {
       name: 'Facebook',
       icon: 'bi bi-facebook sm-icon-style',
-      url: 'https://web.facebook.com/HisenseCo',
+      url: 'https://www.facebook.com/share/186spyPdNM/?mibextid=wwXIfr',
     },
-    {
-      name: 'Instagram',
-      icon: 'bi bi-instagram sm-icon-style',
-      url: 'https://www.instagram.com/hisenseco/?hl=es',
-    },
+    // {
+    //   name: 'Instagram',
+    //   icon: 'bi bi-instagram sm-icon-style',
+    //   url: 'https://www.instagram.com/hisenseco/?hl=es',
+    // },
     {
       name: 'WhatsApp',
       icon: 'bi bi-whatsapp sm-icon-style',

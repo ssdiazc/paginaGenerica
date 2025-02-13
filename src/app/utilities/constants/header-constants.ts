@@ -1,7 +1,10 @@
+import { projectBaseHref } from './data-constants';
+
 const HeaderConstants = {
   brand: {
-    title: "Aleja's Tours",
+    title: 'Aurum Travel',
     hasRef: false,
+    logoLocation: `${projectBaseHref}assets/logos/logo_1.png`,
   },
   sections: [
     {

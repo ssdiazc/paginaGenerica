@@ -20,6 +20,6 @@ export class HomeFooterSectionComponent implements OnInit {
   }
 
   openRef(url: string, option?: string | undefined) {
-    window.open(url, !!option ? option : '');
+    if (!!url && url.length > 0) window.open(url, !!option ? option : '');
   }
 }
