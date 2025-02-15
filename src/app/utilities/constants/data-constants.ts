@@ -1,7 +1,5 @@
-const projectHostname = `${window.location.origin}`;
-const projectName = `/paginaGenerica/`; // for prd
-// const projectName = `/`;
-export const projectBaseHref = `${projectHostname}${projectName}`;
+import { environment } from 'src/environments/environment';
+export const projectBaseHref = `${window.location.origin}${environment.projectName}`;
 const LocationsConstants = {
   bannerDestinationHomePageInfo: {
     horizontal: true,
