@@ -10,7 +10,7 @@ const HeaderConstants = {
     {
       title: 'Inicio',
       hasRef: true,
-      ref: '/home',
+      ref: 'home',
       current: true,
     },
     {
