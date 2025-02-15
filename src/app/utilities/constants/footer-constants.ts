@@ -6,12 +6,12 @@ const FooterConstants = {
         {
           title: 'Cláusula de Responsabilidad',
           hasRef: true,
-          ref: '',
+          ref: 'clau-resp',
         },
         {
           title: 'Condiciones Generales',
           hasRef: true,
-          ref: '',
+          ref: 'condiciones-generales',
         },
         {
           title: 'Protección de datos',

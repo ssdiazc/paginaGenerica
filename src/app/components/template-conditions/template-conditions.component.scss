@@ -1,0 +1,26 @@
+@import '../../../styles-modules/colors.scss';
+.template-gen-container {
+    color: $dark-font-color;
+    margin: 25px 50px 25px 50px;
+    .title {
+        color: $primary-color;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .divider{
+        background-color: $primary-color;
+        height: 5px;
+    }
+    .sub-section {
+        .sub-title {
+            color: $secondary-color;
+            text-transform: uppercase;
+        }
+        .content {
+            text-align: justify;
+        }
+        ul { 
+            list-style-type: "✈️ "; 
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<div class="template-gen-container" *ngIf="!!inputData">
+    <h3 *ngIf="inputData?.title" class="title">{{inputData.title}}</h3>
+    <hr class="hr divider" />
+    <div class="sub-section" *ngFor="let sbsec of inputData?.sections">
+        <h6 class="sub-title" *ngIf="sbsec?.title">{{sbsec.title}}</h6>
+        <p class="content" *ngFor="let parr of sbsec?.content">{{parr}}</p>
+        <ul *ngIf="sbsec?.list">
+            <li *ngFor="let li of sbsec.list">{{li}}</li>
+        </ul>
+    </div>
+</div>

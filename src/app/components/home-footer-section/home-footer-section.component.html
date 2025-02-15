@@ -6,7 +6,7 @@
                 <h5>{{section.title}}</h5>
                 <div *ngFor="let subsection of section.subsections">
                     <div  class="simple-zoom" *ngIf="subsection?.hasRef">
-                        <a (click)="openRef(subsection.ref)">{{subsection.title}}</a>
+                        <a (click)="openRef(subsection.ref, 'router')">{{subsection.title}}</a>
                     </div>
                     <div *ngIf="!subsection?.hasRef">
                         <a>{{subsection.title}}</a>

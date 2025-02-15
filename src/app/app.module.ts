@@ -11,6 +11,9 @@ import { SocialMediaBannerComponent } from './components/social-media-banner/soc
 import { BannerShowInfoTemplateComponent } from './components/banner-show-info-template/banner-show-info-template.component';
 import { CardOnlyTextComponent } from './components/card-only-text/card-only-text.component';
 import { CardTextTypeLlComponent } from './components/card-text-type-ll/card-text-type-ll.component';
+import { GeneralConditionsComponent } from './components/general-conditions/general-conditions.component';
+import { TemplateConditionsComponent } from './components/template-conditions/template-conditions.component';
+import { ResponsabilityClauseComponent } from './components/responsability-clause/responsability-clause.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { CardTextTypeLlComponent } from './components/card-text-type-ll/card-tex
     BannerShowInfoTemplateComponent,
     CardOnlyTextComponent,
     CardTextTypeLlComponent,
+    GeneralConditionsComponent,
+    TemplateConditionsComponent,
+    ResponsabilityClauseComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

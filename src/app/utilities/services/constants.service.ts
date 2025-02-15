@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import LocationsConstants from '../constants/data-constants';
 import FooterConstants from '../constants/footer-constants';
+import GeneralConditionsConstants from '../constants/general-conditions';
 import HeaderConstants from '../constants/header-constants';
+import ResponsabilityClause from '../constants/responsability-clause';
 import { AllConstantsStructureInterfaz } from '../interfaces/general';
 
 let allConstants: AllConstantsStructureInterfaz[] = [
@@ -16,6 +18,14 @@ let allConstants: AllConstantsStructureInterfaz[] = [
   {
     name: 'locations',
     data: LocationsConstants,
+  },
+  {
+    name: 'gen-conditions',
+    data: GeneralConditionsConstants,
+  },
+  {
+    name: 'resp-clause',
+    data: ResponsabilityClause,
   },
 ];
 
